@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航网站</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-fluid">
+            <h1 class="site-title">导航网站</h1>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 左侧导航栏 -->
+            <div class="col-md-3 col-lg-2 sidebar">
+                <nav class="nav flex-column" id="categoryNav">
+                    <!-- 分类导航将通过JavaScript动态生成 -->
+                </nav>
+            </div>
+            <!-- 右侧内容区 -->
+            <div class="col-md-9 col-lg-10 main-content">
+                <!-- 搜索框 -->
+                <div class="mb-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="搜索网站...">
+                        <button class="btn btn-outline-secondary" type="button" id="searchButton">搜索</button>
+                    </div>
+                </div>
+                <div class="row" id="cardContainer">
+                    <!-- 导航卡片将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top" title="返回顶部">↑</button>
+
+    <footer class="site-footer">
+        <div class="container-fluid">
+            <p class="text-center mb-0">© 2025 导航网站 | <a href="https://beian.miit.gov.cn/" target="_blank">备案信息</a></p>
+        </div>
+    </footer>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        </svg>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
